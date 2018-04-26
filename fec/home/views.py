@@ -13,7 +13,7 @@ from django.core.urlresolvers import reverse
 from django.shortcuts import get_object_or_404
 from django.shortcuts import redirect
 import urllib
-from wagtail.wagtaildocs.models import Document
+from wagtail.documents.models import Document
 
 from fec.forms import ContactRAD, form_categories
 from home.models import (
