@@ -74,13 +74,9 @@ def _detect_space(repo, branch=None, yes=False):
 DEPLOY_RULES = (
     ('prod', _detect_prod),
     ('stage', lambda _, branch: branch.startswith('release')),
-    ('dev', lambda _, branch: branch == 'develop'),
+    ('dev', lambda _, branch: branch == 'feature/deploy-wagtail2-audits'),
     # Uncomment below and adjust branch name to deploy desired feature branch to the feature space
-<<<<<<< HEAD
-    ('feature', lambda _, branch: branch == 'feature/deploy-wagtail2-audits'),
-=======
-    ('feature', lambda _, branch: branch == 'feature/election-page-redesign-updated')
->>>>>>> feature/election-page-redesign-updated
+    #('feature', lambda _, branch: branch == 'feature/deploy-wagtail2-audits'),
 )
 
 
