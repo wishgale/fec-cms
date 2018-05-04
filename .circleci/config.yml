@@ -67,16 +67,16 @@ jobs:
           name: Ensure database is available
           command: dockerize -wait tcp://localhost:5432 -timeout 1m
 
-      # - run:
-      #     name: Run tests
-      #     command: |
-      #       . .env/bin/activate
-      #       npm run build-js
-      #       npm run build-sass
-      #       cd fec
-      #       DJANGO_SETTINGS_MODULE=fec.settings.production python manage.py collectstatic --noinput -v 0
+       - run:
+           name: Run tests
+           command: |
+             . .env/bin/activate
+             npm run build-js
+             npm run build-sass
+             cd fec
+             DJANGO_SETTINGS_MODULE=fec.settings.production python manage.py collectstatic --noinput -v 0
       #       ./manage.py test
-      #       npm run test-single
+             npm run test-single
 
       - run:
           name: Perform post-test checks
