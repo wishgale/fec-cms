@@ -652,7 +652,7 @@ $(document).ready(function() {
   });
 
   getStateElectionOffices(context.election.state);
-  getElections(context.election.state, context.election.office,);
+  getElections(context.election.state, context.election.office);
 
   if ($('#election-map').length) {
     var districtMap = new maps.DistrictMap(
