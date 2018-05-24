@@ -1,6 +1,6 @@
 'use strict';
 
-/* global document, context */
+/* global document, context */ 
 
 var d3 = require('d3');
 var $ = require('jquery');
