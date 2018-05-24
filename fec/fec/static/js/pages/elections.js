@@ -84,7 +84,7 @@ var candidateInformationColumns = [
       return columnHelpers.buildEntityLink(
         data,
         helpers.buildAppUrl(['committee', row.candidate_pcc_id]),
-        'candidate_pcc_id',
+        'candidate_pcc_id'
       );
     }
   },
