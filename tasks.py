@@ -76,11 +76,7 @@ DEPLOY_RULES = (
     ('stage', lambda _, branch: branch.startswith('release')),
     ('dev', lambda _, branch: branch == 'develop'),
     # Uncomment below and adjust branch name to deploy desired feature branch to the feature space
-<<<<<<< HEAD
-    ('feature', lambda _, branch: branch == 'feature/deploy-wagtail2-audits'),
-=======
-    # ('feature', lambda _, branch: branch == 'feature/INSERT_BRANCH_NAME'),
->>>>>>> feature/restore-audit-search
+    ('feature', lambda _, branch: branch == 'feature/deploy-wagtail2-final-audits'),
 )
 
 
