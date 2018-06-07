@@ -11,6 +11,7 @@ set -o pipefail
 cd fec
 # Run migrations
 ./manage.py makemigrations
+./manage.py migrate --fake home
 ./manage.py migrate --noinput
 
 # Run application
