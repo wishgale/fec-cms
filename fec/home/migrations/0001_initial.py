@@ -3,8 +3,11 @@ from __future__ import unicode_literals
 
 from django.db import models, migrations
 
-
 class Migration(migrations.Migration):
+
+    dependencies = [
+        ('wagtailcore', '0040_page_draft_title'),
+    ]
 
     operations = [
         migrations.CreateModel(
