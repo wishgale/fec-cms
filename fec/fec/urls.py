@@ -5,7 +5,7 @@ from django.views.generic.base import TemplateView
 
 from wagtail.wagtailadmin import urls as wagtailadmin_urls
 from wagtail.wagtaildocs import urls as wagtaildocs_urls
-from wagtail.wagtailcore import urls as wagtail_urls
+from wagtailsharing import urls as wagtailsharing_urls
 from uaa_client import urls as uaa_urls
 from uaa_client import views as uaa_views
 
@@ -18,6 +18,7 @@ urlpatterns = [
     url(r'^auth/', include(uaa_urls)),
     url(r'^admin/', include(wagtailadmin_urls)),
     url(r'^calendar/$', home_views.calendar),
+    url(r'', include(wagtailsharing_urls)),
     url(r'^about/leadership-and-structure/commissioners/$', home_views.commissioners),
     url(r'^contact-us/$', home_views.contact),
     url(r'^documents/', include(wagtaildocs_urls)),
@@ -28,7 +29,6 @@ urlpatterns = [
     url(r'^updates/$', home_views.updates),
     url(r'', include('data.urls')),  # URLs for /data
     url(r'', include('legal.urls')),  # URLs for legal pages
-    url(r'', include(wagtail_urls)),
 ]
 
 if settings.FEC_CMS_ENVIRONMENT != 'LOCAL':

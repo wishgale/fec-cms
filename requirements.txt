@@ -12,6 +12,7 @@ slacker==0.8.6
 whitenoise==2.0.3
 # before updating wagtail, look at wagtailadmin template override
 wagtail>=1.8,<1.9
+wagtail-sharing==0.7
 bandit==1.4.0
 # TODO: pin version
 django-audit-log

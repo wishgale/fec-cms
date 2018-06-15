@@ -96,6 +96,7 @@ INSTALLED_APPS = (
     'wagtail.contrib.wagtailsearchpromotions',
     'wagtail.contrib.table_block',
     'wagtail.contrib.wagtailstyleguide',
+    'wagtailsharing',
 
     'django_jinja',
 )
