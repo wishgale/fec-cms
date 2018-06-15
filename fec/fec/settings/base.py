@@ -90,6 +90,7 @@ INSTALLED_APPS = (
     'wagtail.contrib.search_promotions',
     'wagtail.contrib.table_block',
     'wagtail.contrib.styleguide',
+    'wagtailsharing',
 
     'fec',
     'search',

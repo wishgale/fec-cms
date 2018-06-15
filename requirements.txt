@@ -11,6 +11,7 @@ requests==2.13.0
 slacker==0.8.6
 whitenoise==2.0.3
 wagtail==2.0.1
+wagtail-sharing==0.7
 bandit==1.4.0
 # TODO: pin version
 django-audit-log

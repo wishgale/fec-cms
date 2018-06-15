@@ -109,3 +109,10 @@ def editor_css():
         '<link rel="stylesheet" href="/static/css/customize-editor.css">'
     )
 
+@hooks.register('before_serve_shared_page')
+def modify_shared_title(page, request, args, kwargs):
+    page.title += ' (Shared)'
+
+@hooks.register('after_serve_shared_page')
+def add_custom_header(page, response):
+    response['Wagtail-Is-Shared'] = '1'
