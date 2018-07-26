@@ -5,6 +5,10 @@ from django.db import models, migrations
 
 class Migration(migrations.Migration):
 
+    dependencies = [
+        ('wagtailcore', '0040_page_draft_title')
+    ]
+
     operations = [
         migrations.CreateModel(
             name='HomePage',
