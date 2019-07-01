@@ -601,6 +601,11 @@ def feedback(request):
         # json.loads() is expecting a string in JSON format:
         # '{"param":"value"}'. Needs to be decoded in Python 3
         data = json.loads(request.body.decode("utf-8"))
+        for key, value in request.META.items():
+            if key.startswith("HTTP") or key.startswith("CloudFront"):
+                print(key, value)
+            else:
+                print(key)
 
         if not any(
             [
