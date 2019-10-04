@@ -187,16 +187,16 @@ aside.contribs-by-state {
         padding-left: 0;
         position: absolute;
         right: auto;
-        top: 75px;
-        transition: opacity .5s .5s;
+        top: 55px;
+        transition: opacity .5s .75s;
         width: 0;
       }
       &.is-error {
         #contribs-by-state-typeahead-error {
-          height: 65px;
+          height: 100px;
           max-width: 300px;
           opacity: 1;
-          transition: opacity .5s .5s;
+          transition: opacity .5s .75s;
           width: 100%;
         }
       }
